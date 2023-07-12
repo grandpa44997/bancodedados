@@ -19,6 +19,7 @@ SELECT A.ID_TURMA,
 FROM TURMA A
 INNER JOIN ESTUDANTE B ON A.ID_TURMA = B.ID_TURMA
 GROUP BY A.ID_TURMA;
+SELECT * FROM ESTUDANTE_INATIVO;
 
 -- 4. Crie um trigger para ser disparado quando o atributo status de um estudante for atualizado e inserir um novo dado em uma tabela de log
 CREATE TABLE ESTUDANTE_LOG (
